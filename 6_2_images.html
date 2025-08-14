@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image tag</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <!-- images load from online -->
+    <img src="https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="400px" alt="no image">
+    <!-- width and height is a property -->
+
+    <!-- images load from local resourse -->
+    <img src="./6_html-cours.png" width="400px"  alt="no image">
+    <picture>
+        <!-- Browser shrink based on that image will be load -->
+        <source media="(min-width: 650px)" srcset="./6_html-cours.png"/>  
+        <source media="(min-width: 460px)" srcset="./6_html-course2.png"/>
+        <img src="./6_html-cours.png" alt="">
+    </picture>
+
+
+
+    <!-- an image map generator -->
+    <!-- Real use case is facebook images tag a friend and instagram images tag a friend -->
+    <!-- The advantage is that only one image which place the user is click on that basis you do different work-->
+    <img src="6_html-course.png" usemap="#image-map">
+    <!-- which image which area which zone which map target click use of onclick function then call one(),two()-->
+
+    <map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="121,42,406,124" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="429,492,93,134" shape="rect">
+</map>
+
+<script>
+    function one(){
+        alert("You clicked on one")
+    }
+    function two(){
+        alert("You clicked on two")
+    }
+</script>
+</body>
+</html>

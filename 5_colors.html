@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Internal css -->
+    <style>
+        body{
+            color: rgb(20, 62, 62);
+        }
+    </style>
+    <!-- External css is override the internal css ,when you write your css file it makes the difference-->
+    <!-- External css -->
+    <link rel="stylesheet" href="style.css"> <!--Create a saparate css file and link that css file inside head tag of html -->
+
+    <title>Formatting</title>
+</head>
+<body>
+    <h1>Formatting</h1>
+    <!-- <h1>Formatting 2</h1> -->
+    <h1>Formatting</h1>
+
+    <p>This is <strong>imporatant</strong></p>
+    <p>This is <b>imporatant</b></p>
+    <p>This is <i>imporatant</i></p>
+    <p>This is <em>imporatant</em></p>
+
+    <ul>
+        <li>b; strong</li>
+        <li>i; em</li>
+        <li>small</li>
+        <li>sub, sup</li>
+        <li>del, mark</li>
+    </ul>
+
+    <!-- subscript element -->
+    <p>H<SUb>2</SUb>O</p>
+    <!-- superscript element -->
+    <p>a<sup>2</sup>-b<sup>2</sup>=c<sup>2</sup></p>
+
+    <!-- deleted text element-->
+    <p>Nothing is happend <del>now</del></p>
+    <!-- mark text element -->
+    <p>My name is <mark>suman panda</mark> </p>
+
+    <!-- Inline css - inline css we render conditionally. Example-user not login then red button show and user already login then show blue button show-->
+    <h3
+    style="
+    text-align: center;
+    background-color: #2265b3;
+    color: rgb(222, 201, 241); 
+    " 
+    >This tag needs some styling</h3> 
+
+    <h3
+    style="
+    text-align: center;
+    background-color: blue; 
+    " 
+    >This tag needs some styling</h3>
+
+    <h3
+    style="
+    text-align: center;
+    background-color: hsl(240, 100%, 50%); 
+    " 
+    >This tag needs some styling</h3>
+
+    <h3
+    style="
+    text-align: center;
+    background-color: hwb(240 0% 0%); 
+    " 
+    >This tag needs some styling</h3>
+   
+    <h3
+    style="
+    text-align: center;
+    background-color: rgb(203, 29, 29); 
+    " 
+    >This tag needs some styling</h3>
+
+    <h3
+    style="
+    text-align: center;
+    background-color: rgba(203, 29, 29, .5);
+    color: blueviolet; 
+    " 
+    >This tag needs some styling</h3>
+    
+    <h3
+    style="
+    text-align: center;
+    background-color: hsla(0, 75%, 45%, 0.10); 
+    " 
+    >This tag needs some styling</h3>
+
+    <!-- small tag -->
+    <p><small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae iste necessitatibus dolor perspiciatis natus saepe et inventore tenetur. Distinctio dicta, nobis aperiam repellat non dolor exercitationem velit veritatis quia fugit.</small></p>
+
+    <!-- This is not give much waitage in our search engine -->
+    <p>
+        This is my quote
+    </p>
+    <p>
+        <blockquote>
+            this is my quote
+        </blockquote>
+
+        <blockquote cite="Elon">
+            this is my quote
+        </blockquote>
+
+        <q>
+            this is my quote
+        </q>
+        <br/>
+
+        <abbr title="Hyper Text Markup Language">HTML</abbr>
+
+        <address>
+            <a href="mailto:pandasuman12345@gmail.com">pandasuman12345@gmail.com</a> <br/>
+            <a href="tel:+917205579224">+91 (720) 557-9224</a>
+        </address>
+        <cite>
+            <a href="https://google.com">Google</a>
+        </cite>
+        <br/>
+
+        <bdo dir="rtl">Suman</bdo>
+    </p>
+
+    
+</body>
+</html>
