@@ -21,7 +21,7 @@
 </head>
 <body>
     <table style="width: 100%;">
-        <!-- <colgroup></colgroup> make the group of column. This tag is not implemented much. It's support slowley reduce in browser -->
+        <!-- <colgroup></colgroup> make the group of two or more column. This tag is not implemented much. It's support slowley reduce in browser -->
         <colgroup>
             <col span="2" style="background-color: cadetblue;"/>
         </colgroup>
@@ -71,13 +71,13 @@
         </caption>
         <thead>
           <tr>
-            <th scope="col">Items</th>
+            <th scope="col">Items</th>  //scope="col" → This header applies to the entire column under it.
             <th scope="col">Expenditure</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Donuts</th>
+            <th scope="row">Donuts</th>  //scope="row" → This header applies to the entire row beside it.
             <td>3,000</td>
           </tr>
           <tr>
